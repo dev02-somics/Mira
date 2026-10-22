@@ -1,0 +1,10 @@
+{
+  "id": "demo-media-01",
+  "type": "file",
+  "delivery": "http",
+  "fileName": "demo.mp3",
+  "mimeType": "audio/mpeg",
+  "size": 13,
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "downloadUrl": "https://files.example.invalid/api/files/demo-media-01"
+}

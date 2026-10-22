@@ -1,0 +1,14 @@
+{
+  "device_id": "SOMICS-000001",
+  "host": "broker.example.invalid",
+  "port": 8083,
+  "username": "",
+  "password": "",
+  "mqtt_tls": false,
+  "api_base": "http://files.example.invalid",
+  "topic_base": "station/player",
+  "allowed_hosts": [
+    "files.example.invalid"
+  ],
+  "volume": 30
+}

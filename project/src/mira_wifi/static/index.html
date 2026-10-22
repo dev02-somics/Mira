@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wi-Fi · MIRA</title><link rel="stylesheet" href="/style.css"><script src="/wifi.js" defer></script></head>
+<body><main><header><div class="brand">MIRA <span>THIẾT BỊ ÂM THANH</span></div><span class="chip">Wi-Fi 2.4 GHz</span></header>
+<h1>Kết nối Wi-Fi</h1><p class="intro">Chọn mạng một lần. MIRA sẽ nhớ và tự kết nối lại.</p>
+<section id="loginCard"><h2>Mở trang quản lý</h2><p>Dùng mật khẩu Wi-Fi cài đặt đi kèm thiết bị.</p>
+<form id="loginForm"><label for="adminPassword">Mật khẩu quản lý</label><input id="adminPassword" type="password" required maxlength="128" autocomplete="current-password">
+<button type="submit">Đăng nhập</button></form></section>
+<div id="dashboard" hidden><section class="status"><div><span id="statusLabel" class="eyebrow">SẴN SÀNG CÀI ĐẶT</span><h2 id="current">Chưa kết nối</h2>
+<p id="message" aria-live="polite"></p></div><div id="ipBox" hidden><span>Địa chỉ SSH</span><code id="ssh"></code></div></section>
+<section><div class="sectionTitle"><h2>Wi-Fi xung quanh</h2><button id="scan" class="secondary">Dò lại</button></div>
+<p class="hint">Ưu tiên mạng đã lưu. Wi-Fi WPA2 ở băng tần 2.4 GHz.</p><div id="networks"><p>Đang dò mạng…</p></div></section>
+<section><h2>Mạng đã lưu</h2><p class="hint">Mạng kết nối thành công gần nhất được ưu tiên.</p><div id="saved"></div></section>
+<section id="mqttCard"><h2>Kết nối MQTT</h2><p id="mqttStatus" class="hint">Đang đọc trạng thái…</p>
+<form id="mqttForm"><label for="mqttDevice">Mã thiết bị</label><input id="mqttDevice" required maxlength="64" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="SOMICS-000001">
+<label for="mqttCode">Mã kích hoạt</label><input id="mqttCode" required maxlength="64" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="XXXX-XXXX-XXXX">
+<p class="hint">Lấy 2 mã trên trang quản lý SOMICS. Mỗi mã kích hoạt chỉ dùng được một lần; thiết bị cần có Internet.</p>
+<button type="submit">Kích hoạt</button></form></section>
+<footer><p id="setup"></p><p>Nếu điện thoại báo “Không có Internet”, chọn vẫn kết nối với Wi-Fi cài đặt.</p><p>Khi đổi mạng, Wi-Fi cài đặt có thể ngắt khoảng 50 giây. Kết nối lại nếu cần.</p><button id="logout" class="textButton">Đăng xuất</button></footer></div>
+<p id="notice" role="status" aria-live="polite"></p>
+<dialog id="join"><form id="joinForm"><h2 id="joinTitle">Kết nối Wi-Fi</h2><p id="savedHint" class="hint"></p>
+<label for="wifiPassword">Mật khẩu Wi-Fi</label><div class="password"><input id="wifiPassword" type="password" maxlength="64" autocomplete="off"><button id="showPassword" type="button" class="secondary">Hiện</button></div>
+<p class="hint">Chỉ lưu mật khẩu sau khi kết nối thành công.</p><div class="actions"><button type="button" id="cancel" class="secondary">Hủy</button><button type="submit">Kết nối</button></div></form></dialog>
+</main></body></html>
