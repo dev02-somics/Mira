@@ -1,5 +1,0 @@
-Cannot initialize conversion from codepage 850 to UTF-8: Not a tty
-Cannot initialize conversion from UTF-8 to codepage 850: Not a tty
-Using internal CP850 conversion table
-fsck.fat 4.2 (2021-01-31)
-/dev/mmcblk0p1: 231 files, 5134/485936 clusters

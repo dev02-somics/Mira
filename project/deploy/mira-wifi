@@ -1,4 +1,0 @@
-#!/bin/sh
-export PYTHONDONTWRITEBYTECODE=1
-export PYTHONPATH=/root/mira-wifi
-exec /usr/bin/python3 -m mira_wifi.cli "$@"
